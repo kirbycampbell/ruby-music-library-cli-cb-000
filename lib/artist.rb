@@ -11,10 +11,10 @@ class Artist
     @songs
   end
 
-  def add_song
-    #if Song.artist == nil
-      Song.artist << self
-    #end
+  def add_song(song)
+    if song.artist == nil
+      Song.artist = self
+    end
   end
 
   def self.all
