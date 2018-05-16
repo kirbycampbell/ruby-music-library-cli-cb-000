@@ -12,7 +12,9 @@ class Artist
   end
 
   def add_song
-
+    if Song.artist == nil
+      Song.artist = self
+    end
   end
 
   def self.all
