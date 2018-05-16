@@ -15,6 +15,10 @@ class Artist
     if song.artist == nil
       song.artist = self
     end
+    if self.songs.include?(song)
+    else
+      self.songs << song
+    end
   end
 
   def self.all
