@@ -19,8 +19,7 @@ class Song
   end
 
   def self.create(name)
-    new = self.new(name)
-    @@all << new
+    self.new(name)
   end
 
 end
