@@ -18,7 +18,7 @@ class Song
     @@all << self
   end
 
-  def self.create(name)
+  def create(name)
     new = self.new(name)
     new.save
   end
