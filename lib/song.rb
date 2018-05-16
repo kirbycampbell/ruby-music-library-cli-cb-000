@@ -7,6 +7,11 @@ class Song
     self.artist = artist unless artist.nil?
   end
 
+  def artist=(artist)
+    @artist = artist
+    artist.add_song(self)
+  end
+
   def self.all
     @@all
   end
