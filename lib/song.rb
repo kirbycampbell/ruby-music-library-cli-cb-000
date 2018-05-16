@@ -6,8 +6,12 @@ class Song
     @name = name
   end
 
-  def all
+  def self.all
     @@all
+  end
+
+  def destroy_all
+    @@all.clear
   end
 
 end
