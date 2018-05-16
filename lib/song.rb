@@ -7,6 +7,10 @@ class Song
     @artist = artist
   end
 
+  def artist=(song)
+    Artist.add_song(song)
+  end
+
   def self.all
     @@all
   end
