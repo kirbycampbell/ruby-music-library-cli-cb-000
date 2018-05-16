@@ -1,4 +1,5 @@
 class Song
+  require 'pry'
   attr_accessor :name
   @@all = []
 
@@ -23,5 +24,5 @@ class Song
     new.save
     new
   end
-
+binding.pry
 end
